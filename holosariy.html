@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .statement-list {
+        list-style-type: none;
+        padding-left: 3%;
+        padding-inline-start: 0px;
+      }
+    
+      .statement-list li {
+        margin-bottom: 10px;
+        font-size: 200%;
+        color: inherit;
+        text-decoration: none;
+      }
+    
+      .statement-list li::before {
+        content: "•  ";
+        color: #fafafa;
+        font-weight: bold;
+        margin-right: 2px;
+      }
+        </style>
+    <title>Відношення і пропорції</title>
+</head>
+<body>
+    <div class="top-section">
+        <div class="logo" onclick="location.href = 'https://www.uzhnu.edu.ua/uk/cat/faculty-mdt'">
+            <img src="./logo_new.png" alt="logo" width="70" height="70" title="logo">
+        </div> 
+        <div class="caption" onclick="location.href = 'index.html'">Відношення і пропорції</div>
+        <div class="button-container">
+            <button class="button" style="width:120px;" onclick ="document.location='zmist.html'">Зміст</button>
+            <button class="button" style="width:120px; background-color: #6e6e6e;" onclick ="document.location='holosariy.html'">Голосарій</button>
+        </div>
+        
+    </div>  
+
+    <div class="chapter">
+        <h1 class="chapter-title" id="ch1">Голосарій</h1>
+        <div class="statement-content">
+            <ul class="decimal-list">
+                <li><a href="index.html#ch1">Відношення</a>: Частка двох чисел a і b, відмінних від нуля, яка показує, у скільки разів перше число більше за друге або яку частину перше число складає від другого. Відношення можна записати у вигляді a : b або дробу a/b.</li>
+                <li><a href="index.html#ch1.1">Члени відношення</a>: Числа a і b, які утворюють відношення. Число a називається попереднім членом, а число b - наступним членом.</li>    
+                <li><a href="index.html#ch1.2">Обернене відношення</a>: Відношення b : a, яке отримується, коли місцями обмінюються попередній і наступний члени відношення a : b.</li> 
+                <li><a href="index.html#ch5">Пропорція</a>: Рівність двох відношень, що записується у вигляді a : b = c : d.</li> 
+                <li><a href="index.html#ch5.1">Крайні члени пропорції</a>: Члени a і d, що знаходяться на протилежних кінцях пропорції.</li> 
+                <li><a href="index.html#ch5.1">Середні члени пропорції</a>: Члени b і c, що знаходяться в середині пропорції, між крайніми членами.</li>                                                                                           
+            </ul>
+        </div>
+      </div>
+
+
+      <footer class="footer">
+        <div class="info">
+          <h3>Додатковий матеріал для учнів 6 класів</h3>
+          <p>Підготував: Попович Василь Романович</p>
+          <p>Студент ІІ курсу</p>
+          <p>Факультету математики та цифрових технологій</p>
+        </div>
+      </footer>
+  
+      <div class="scroll-to-top" id="scrollToTopButton" >&utrif;</div>
+      <div class="hover">Наверх</div>
+  
+      
+  
+      <script>
+        // JavaScript code
+        var scrollToTopButton = document.getElementById("scrollToTopButton");
+    
+        window.addEventListener("scroll", function() {
+          if (window.pageYOffset > 100) {
+            scrollToTopButton.style.display = "block";
+          } else {
+            scrollToTopButton.style.display = "none";
+          }
+        });
+    
+        scrollToTopButton.addEventListener("click", function() {
+          document.documentElement.scrollIntoView({ behavior: "smooth" });
+        });
+      </script>
+  </body>
+  </html>      
